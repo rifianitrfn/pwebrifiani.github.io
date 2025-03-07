@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <center>
+            <h2>DATA DIRI</h2>
+            <h3>Rifiani Tasrifin | 2308800</h3>
+        </center>
+
+        <fieldset>
+            <legend>Informasi Personal</legend>
+            <form method="POST">
+                <label>Nama:</label>
+                <input type="text" name="nama" placeholder="Masukkan Nama Panjang" required>
+
+                <label>Tanggal Lahir:</label>
+                <input type="date" name="tanggal_lahir">
+
+                <label>Warna Kesukaan:</label>
+                <input type="color" name="color">
+
+                <label>Range kesukaan:</label>
+                <input type="range" name="range">
+
+                <label>Jenis Kelamin:</label>
+                <div class="flex-group">
+                    <label>Laki - Laki</label>
+                    <input type="radio" name="gender" value="Laki-laki">
+                </div>
+                <div class="flex-group">
+                    <label>Perempuan</label>
+                    <input type="radio" name="gender" value="Perempuan">
+                </div>
+<br>
+                <label>Agama:</label>
+                <select name="agama">
+                    <option>Pilihan Agama</option>
+                    <option>Islam</option>
+                    <option>Kristen</option>
+                    <option>Katolik</option>
+                    <option>Hindu</option>
+                    <option>Buddha</option>
+                    <option>Konghucu</option>
+                </select>
+
+                <label>Hobi:</label>
+                <div class="grid-container">
+                    <div class="flex-group">
+                        <label>Berenang</label>
+                        <input type="checkbox" name="hobby" value="Berenang">
+                    </div>
+                    <div class="flex-group">
+                        <label>Belanja</label>
+                        <input type="checkbox" name="hobby" value="Belanja">
+                    </div>
+                    <div class="flex-group">
+                        <label>Jalan Jalan</label>
+                        <input type="checkbox" name="hobby" value="Jalan_Jalan">
+                    </div>
+                    <div class="flex-group">
+                        <label>Membaca</label>
+                        <input type="checkbox" name="hobby" value="Membaca">
+                    </div>
+                </div>
+<br>
+                <label>Alamat:</label>
+                <textarea name="alamat" placeholder="Masukkan Alamat"></textarea>
+
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Masukkan Email" required>
+
+                <label>No.Telp:</label>
+                <input type="text" name="telpon" placeholder="Masukkan No.telpon">
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Akun</legend>
+            <form method="POST">
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="Username">
+
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Password">
+
+                <label>Foto Profil:</label>
+                <input type="file" name="foto_profil">
+
+                <div class="button-group">
+                    <button type="submit"> <a href="porto.html">Kirim</a></button> &nbsp;
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+
+</body>
+</html>

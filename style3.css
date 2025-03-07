@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+fieldset {
+    width: 800px;
+    background: rgb(213, 210, 210);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #563318;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+    fieldset {
+        width: 90%;
+    }
+
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
